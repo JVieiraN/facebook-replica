@@ -54,6 +54,13 @@ input[type="email"], input[type="password"] {
     width: 27.5vw;
     border-radius: 5px;
     border: 1px solid rgba(0, 0, 0, 0.150);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    font-weight: lighter;
+}
+
+input[type="email"]::placeholder, input[type="password"]::placeholder{
+    opacity: 50%;
 }
 
 input[type="submit"]{
