@@ -1,0 +1,28 @@
+@media(max-width: 450px) {
+    .container{
+        flex-direction: column;
+    }
+
+    .informacao{
+        text-align: center;
+        padding: 30px 0 0 0;  
+    }
+
+    .informacao p:nth-child(2){
+        font-size: 1.4rem !important;
+    }
+
+    .login, .senha {
+        width: 22rem;
+    }
+
+    footer{
+        margin: 5rem 0 0 0 !important;
+    }
+
+
+
+    
+}
+
+

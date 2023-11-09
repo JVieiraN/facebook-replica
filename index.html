@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Facebook - entre ou cadastre-se</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/style.css">
     <link rel="shortcut icon" href="./img/5968764.png" type="image/x-icon">
 </head>
 <body>
@@ -28,5 +28,67 @@
     <footer>
         <p>Este projeto é uma réplica da tela de login do Facebook, criada com o propósito de fins educacionais e para demonstrar habilidades de desenvolvimento front-end. Não estou associado de forma alguma ao Facebook e não coletamos ou armazenamos informações de login.
     </footer>
+
+    <div class="tela_cadastro">
+        <header>
+            <h1>Cadastre-se</h1>
+            <p>É rápido e fácil</p>
+        </header>
+
+        <form action="">
+            <input type="text" name="nome" id="nome">
+            <input type="text" name="sobrenome" id="sobrenome">
+            <input type="email" name="email" id="email">
+            <input type="password" name="nome" id="senha">
+
+
+            <label>Data de nascimento</label>
+            <select name="dia">
+                <script>
+                  for (var i = 1; i <= 31; i++) {
+                    document.write('<option value="' + i + '">' + i + '</option>');
+                  }
+                </script>
+            </select>
+
+            <select name="mes">
+                <script>
+                  var meses = ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"];
+              
+                  for (var i = 0; i < meses.length; i++) {
+                    document.write('<option value="' + (i + 1) + '">' + meses[i] + '</option>');
+                  }
+                </script>
+            </select>
+              
+            <select name="ano">
+                <script>
+                  for (var i = 2023; i !== 1904; i--) {
+                    document.write('<option value="' + i + '">' + i + '</option>');
+                  }
+                </script>
+            </select>
+
+                <label>Gênero</label>
+                <span>
+
+                    <span class="caixa_feminino">
+                        <label for="feminino">Feminino</label>
+                        <input type="radio" name="feminino" id="feminino">
+                    </span>
+                    
+                    <span class="caixa_masculino">
+                        <label for="masculino">Masculino</label>
+                        <input type="radio" name="masculino" id="masculino">
+                    </span>
+
+                    <span class="caixa_personalizado">
+                        <label for="personalizado">Personalizado</label>
+                        <input type="radio" name="personalizado" id="personalizado">
+                    </span>
+
+                </span>
+        </form>
+    </div>
 </body>
 </html>
