@@ -110,3 +110,31 @@ footer p{
     font-style: italic;
     opacity: 45%;
 }
+
+
+.tela_cadastro{
+    width: 25rem;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.tela_cadastro:not(){
+    align-items: center;
+}
+
+.caixa_nome_sobrenome input, .caixa_dados input{
+    padding: 0.7rem;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #e0e0e0;
+    background-color: #f5f6f7;
+}
+
+.caixa_dados{
+    display: flex;
+    flex-direction: column;
+}
+
+
