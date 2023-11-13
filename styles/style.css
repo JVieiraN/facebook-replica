@@ -1,4 +1,5 @@
 @import url("./resp.css");
+@import url("./cadastro.css");
 
 *{
     padding: 0;
@@ -8,6 +9,7 @@
 
 body{
     background-color: #f0f2f5;
+    position: relative;
 }
 
 .container{
@@ -62,7 +64,7 @@ body{
 }
 
 
-input[type="submit"]{
+.logar input[type="submit"]{
     width: 22rem;
     padding: 12.5px;
     cursor: pointer;
@@ -112,29 +114,9 @@ footer p{
 }
 
 
-.tela_cadastro{
-    width: 25rem;
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    border-radius: 10px;
-}
 
-.tela_cadastro:not(){
-    align-items: center;
-}
 
-.caixa_nome_sobrenome input, .caixa_dados input{
-    padding: 0.7rem;
-    outline: none;
-    border-radius: 5px;
-    border: 1px solid #e0e0e0;
-    background-color: #f5f6f7;
-}
 
-.caixa_dados{
-    display: flex;
-    flex-direction: column;
-}
+
 
 

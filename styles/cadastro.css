@@ -1,0 +1,133 @@
+.caixa-cadastro{
+    background-color: #ffffff;
+    width: 24rem;
+    padding: 1rem;
+    border-radius: 10px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 42.5%;
+    left: 50%;
+}
+
+.caixa-cadastro header{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 12px;
+}
+
+.fechar{
+    width: 30px;
+    margin-top: 5px;
+}
+
+.caixa-cadastro hr{
+    opacity: 15%;
+    margin-bottom: 10px;
+}
+
+.inputs{
+    display: grid;
+    grid-template-areas: 
+    "nome sobrenome"
+    "email email"
+    "senha senha";
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    grid-gap: 0.5rem;
+}
+
+.inputs, .selecoes, .caixa-generos{
+    margin-bottom: 0.8rem;
+}
+
+.titulo-genero{
+    margin-bottom: 7px;
+}
+
+.inputs input{
+    background-color: #f5f6f7;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccd0d5;
+}
+
+#nome{
+    grid-area: nome;
+}
+
+#sobrenome{
+    grid-area: sobrenome;
+}
+
+#email{
+    grid-area: email;
+}
+
+#senha{
+    grid-area: senha;
+}
+
+.selecoes select{
+    padding: 0.5rem;
+    width: 31.3%;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: 1px solid #ccd0d5;
+}
+
+.selecoes select:not(:nth-child(3)){
+    margin-right: 4.5px;
+}
+
+.container-generos{
+    margin-bottom: 0.8rem;
+}
+
+.container-generos span{
+    border: 1px solid #ccd0d5;
+    border-radius: 5px;
+    padding: 7px;
+}
+
+.container-generos span:not(:nth-child(3)){
+    margin-right: 12px;
+}
+
+.container-generos label{
+    font-size: 0.9rem;
+}
+
+.paragrafo-cadastro{
+    color: #747a82;
+    font-size: 0.8rem;
+}
+
+.caixa-cadastro h1{
+    font-size: 2rem;
+}
+
+.texto-final{
+    font-size: 0.7rem;
+    color: #747a82;
+}
+
+.container-ccadastro{
+    display: flex;
+    justify-content: center;
+}
+
+.ccadastro{
+    margin: 1rem 0;
+    color: #ffffff;
+    cursor: pointer;
+    background-color: #00a400;
+    border-radius: 5px;
+    border: none;
+    font-size: large;
+    font-weight: bold;
+    width: 50%;
+    padding: 0.5rem;
+}

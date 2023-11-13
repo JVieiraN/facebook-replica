@@ -29,76 +29,83 @@
         <p>Este projeto é uma réplica da tela de login do Facebook, criada com o propósito de fins educacionais e para demonstrar habilidades de desenvolvimento front-end. Não estou associado de forma alguma ao Facebook e não coletamos ou armazenamos informações de login.
     </footer>
 
-    <div class="tela_cadastro">
+    <section class="caixa-cadastro">
         <header>
-            <h1>Cadastre-se</h1>
-            <p>É rápido e fácil</p>
+            <div>
+                <h1>Cadastre-se</h1>
+                <p class="paragrafo-cadastro">É rápido e fácil.</p>
+            </div>
+
+            <img src="./img/x.svg" class="fechar">
+            
         </header>
 
         <hr>
 
-        <form action="">
-            <span class="caixa_nome_sobrenome">
+        <form action="" method="post">
+            <div class="inputs">
                 <input type="text" name="nome" id="nome" placeholder="Nome">
                 <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome">
-            </span>
-            
-            <div class="caixa_dados">
-                <input type="email" name="email" id="email" placeholder="Email ou Celular">
-                <input type="password" name="nome" id="senha" placeholder="Nova Senha">
-            </div>
-            
-
-
-            <label>Data de nascimento</label>
-
-            <div class="caixa_data">
-                <select name="dia">
-                    <script>
-                    for (var i = 1; i <= 31; i++) {
-                        document.write('<option value="' + i + '">' + i + '</option>');
-                    }
-                    </script>
-                </select>
-
-                <select name="mes">
-                    <script>
-                    var meses = ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"];
-                
-                    for (var i = 0; i < meses.length; i++) {
-                        document.write('<option value="' + (i + 1) + '">' + meses[i] + '</option>');
-                    }
-                    </script>
-                </select>
-                
-                <select name="ano">
-                    <script>
-                    for (var i = 2023; i !== 1904; i--) {
-                        document.write('<option value="' + i + '">' + i + '</option>');
-                    }
-                    </script>
-                </select>
+                <input type="email" name="email" id="email" placeholder="Celular ou email">
+                <input type="password" name="senha" id="senha" placeholder="Nova senha">
             </div>
 
-                <label>Gênero</label>
-                <div class="caixa_genero">
-                    <span class="caixa_feminino">
-                        <label for="feminino">Feminino</label>
-                        <input type="radio" name="feminino" id="feminino">
-                    </span>
+
+            <p class="paragrafo-cadastro">Data de Nascimento</p>
+            <div class="selecoes">
+                <select name="dia" id="dia">
+                    <script>
+                        for (var i = 1; i <= 31; i++) {
+                            document.write('<option value="' + i + '">' + i + '</option>');
+                        }
+                    </script>
+                </select>
+                <select name="mes" id="mes">
+                    <script>
+                        var meses = ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"];
                     
-                    <span class="caixa_masculino">
-                        <label for="masculino">Masculino</label>
-                        <input type="radio" name="masculino" id="masculino">
-                    </span>
+                        for (var i = 0; i < meses.length; i++) {
+                            document.write('<option value="' + (i + 1) + '">' + meses[i] + '</option>');
+                        }
+                    </script>
+                </select>
+                <select name="ano" id="ano">
+                    <script>
+                        for (var i = 2023; i !== 1904; i--) {
+                            document.write('<option value="' + i + '">' + i + '</option>');
+                        }
+                    </script>
+                </select>
+            </div>
 
-                    <span class="caixa_personalizado">
-                        <label for="personalizado">Personalizado</label>
-                        <input type="radio" name="personalizado" id="personalizado">
-                    </span>
 
-                </div>
+            <p class="paragrafo-cadastro titulo-genero">Gênero</p>
+            <div class="container-generos">
+                <span>
+                    <label for="feminino">Feminino</label>
+                    <input type="radio" name="opcao" id="feminino">
+                </span>
+
+                <span>
+                    <label for="masculino">Masculino</label>
+                    <input type="radio" name="opcao" id="masculino">
+                </span>
+
+                <span>
+                    <label for="personalizado">Personalizado</label>
+                    <input type="radio" name="opcao" id="personalizado">
+                </span>
+            </div>
+            
         </form>
-    </div>
+
+        <p class="texto-final">As pessoas que usam nosso serviço podem ter enviado suas informações de contato para o Facebook. Saiba mais
+            <br> <br>
+            Ao clicar em Cadastre-se, você concorda com nossos Termos, Política de Privacidade e Política de Cookies. Você poderá receber notificações por SMS e cancelar isso quando quiser.
+        </p>
+        
+        <span class="container-ccadastro"><input type="submit" value="Cadastre-se" class="ccadastro"></span>
+        
+    </section>
 </body>
 </html>
